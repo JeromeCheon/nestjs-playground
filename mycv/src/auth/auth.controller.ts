@@ -1,4 +1,4 @@
-import { UserDto } from './UserDto';
+import { UserDto } from './dto/signInUp.dto';
 import { Body, Controller, Post } from '@nestjs/common';
 import { AuthService } from './auth.service';
 
