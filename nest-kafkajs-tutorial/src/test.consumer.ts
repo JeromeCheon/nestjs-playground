@@ -6,7 +6,7 @@ export class TestConsumer implements OnModuleInit {
   constructor(private readonly consumerService: ConsumerService) {}
   async onModuleInit() {
     await this.consumerService.consume(
-      { topics: ['test'] },
+      { topics: [/hubId-.*/] },
       {
         eachMessage: async ({ topic, partition, message }) => {
           console.log({
